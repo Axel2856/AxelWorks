@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNg Parameter Value Pass">
+<test name="PrimusBank Login Test">
+<parameter name="url" value="http://www.primusbank.qedgetech.com/"/>
+<parameter name="user" value="Admin"/>
+<parameter name="pass" value="Admin"/>
+<classes>
+<class name="testngworks.TestNgParameter"></class>
+</classes>
+</test>
+</suite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Classes Execution Suite]">
+  <test name="All Test Execution of each Classes">
+    <classes>
+      <class name="testngworks.TestNgBasic1"/>
+      <class name="testngworks.TestNgBasic2"/>
+      <class name="testngworks.TestNgBasic3"/>
+    </classes>
+  </test> <!-- All Test Execution of each Classes -->
+  <test name="All Test Execution of each Classes(failed)">
+    <classes>
+      <class name="testngworks.TestNgBasic2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="googleLogo"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testngworks.TestNgBasic2 -->
+      <class name="testngworks.TestNgBasic1">
+        <methods>
+          <include name="setUp"/>
+          <include name="login"/>
+          <include name="deleteAllCookies"/>
+          <include name="logout"/>
+          <include name="tearDown"/>
+          <include name="closeBrowser"/>
+          <include name="lunchUrl"/>
+          <include name="lunchBrowser"/>
+        </methods>
+      </class> <!-- testngworks.TestNgBasic1 -->
+      <class name="testngworks.TestNgBasic3">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testngworks.TestNgBasic3 -->
+    </classes>
+  </test> <!-- All Test Execution of each Classes(failed) -->
+</suite> <!-- Failed suite [All Classes Execution Suite] -->
